@@ -1,0 +1,12 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:davidhousedev/wedding-site.git",
+  "author": "David House <davidhousedev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
