@@ -201,7 +201,7 @@ body {
   display: grid;
   justify-content: center;
   background-color: #fafafa;
-  padding: 2rem 2rem 0 2rem;
+  padding: 2rem 2rem 0rem 2rem;
 }
 
 body > * {
@@ -234,6 +234,7 @@ body > * {
 
 .list {
   list-style: circle;
+  margin-bottom: 1rem;
 }
 
 .list li {
