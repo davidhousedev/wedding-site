@@ -105,7 +105,7 @@ nav,
 section {
   display: block;
 }
-body {
+main {
   line-height: 1;
 }
 ol,
@@ -138,7 +138,7 @@ body {
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
-body {
+main {
   font-weight: 400;
   line-height: 1.75;
   color: #222;
@@ -196,17 +196,69 @@ a:visited {
   color: inherit;
 }
 
+p {
+  max-width: 56ch;
+}
+
 /* Layout */
+
+html {
+  background-color: #fafafa;
+}
+
 body {
+  position: relative;
+}
+
+main {
   display: grid;
   justify-content: center;
-  background-color: #fafafa;
   padding: 2rem 2rem 0rem 2rem;
 }
 
-body > * {
+main > * {
   max-width: 45rem;
   padding-bottom: 4rem;
+}
+
+.menu {
+  position: fixed;
+  top: 2rem;
+  font-size: 1.5rem;
+  right: 0;
+}
+
+.menu li {
+  margin: 0.5rem;
+
+  min-width: 3rem;
+  min-height: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 80%;
+}
+
+.menu a {
+  border-radius: 10%;
+  border: 2px solid skyblue;
+  background-color: azure;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.menu a span {
+  display: block;
+  text-align: center;
+}
+
+.menu a span:nth-child(2) {
+  font-size: 0.75rem;
+  max-width: 2.5rem;
 }
 
 /* Title */
@@ -269,4 +321,26 @@ em {
 img.responsive {
   object-fit: contain;
   width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-40 {
+  flex-basis: 40%;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .desktop-only {
+    display: inherit;
+  }
 }
