@@ -190,6 +190,11 @@ small,
   font-size: 0.75rem;
 }
 
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
 /* Theme */
 
 a,
@@ -374,4 +379,8 @@ img.responsive {
   .desktop-only {
     display: inherit;
   }
+}
+
+.mw-sm {
+  max-width: 18rem;
 }
